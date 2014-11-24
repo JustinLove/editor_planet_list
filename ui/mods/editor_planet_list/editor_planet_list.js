@@ -6,7 +6,6 @@
   };
 
   handlers['planets.click'] = function(index) {
-    console.log('click', index)
     model.changeSelectedPlanet(index)
   }
 
@@ -19,12 +18,16 @@
       planet.isSelected = model.selectedPlanetIndex() == index,
       planet.imageSmall = 'coui://ui/main/shared/img/planets/small/' + planet.planet.biome + '.png'
       planet.delta_v_current_array = []
+      planet.delta_v_theshold_array = []
+      if (planet.required_thrust_to_move !== undefined) {
+        planet.delta_v_theshold_array.length = planet.required_thrust_to_move
+      }
       planet.thrust_control = false
       planet.weapon_control = false
     })
     return {
       system: model.systemName(),
-      landing: false,
+      landing: true,
       planets: planets,
       selected: model.selectedPlanetIndex(),
       targeting: false,
