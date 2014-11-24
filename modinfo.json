@@ -1,0 +1,21 @@
+{
+  "author": "wondible",
+  "build": "74525",
+  "category": ["system-editor", "ui"],
+  "context": "client",
+  "date": "2014/11/23",
+  "description": "List of planets in the system editor, to make them easier to select.",
+  "display_name": "Editor Planet List",
+  "forum": null,
+  "identifier": "com.wondible.pa.editor_planet_list",
+  "priority": 100,
+  "scenes": {
+    "system_editor": [
+      "coui://ui/mods/editor_planet_list/editor_planet_list.css",
+      "coui://ui/mods/editor_planet_list/editor_planet_list.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
