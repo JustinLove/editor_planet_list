@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "74525",
+  "build": "86765",
   "category": ["system-editor", "ui"],
   "context": "client",
-  "date": "2014/11/23",
+  "date": "2015/08/29",
   "description": "List of planets in the system editor, to make them easier to select.",
   "display_name": "Editor Planet List",
   "forum": "https://forums.uberent.com/threads/rel-editor-planet-list.66125/",
@@ -16,6 +16,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
 
